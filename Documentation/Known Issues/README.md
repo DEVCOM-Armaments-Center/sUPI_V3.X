@@ -20,17 +20,7 @@ GitHub, refer to [`CONTRIBUTING.md`](../../CONTRIBUTING.md).
 
 | Issue | Part |
 | --- | --- |
+| [The latch notch does not align with the button, and the halves do not seat fully](13122514-13122515-13122518-latch-misalignment.md) | `13122514`, `13122515`, `13122518` |
 | [The model hole positions are different from 100064665 V3](13122518-hole-spacing-issue.md) | `13122518` |
 | [Note 5 names a superseded design model](13122514-13122517-note-5-stale-design-model.md) | `13122514`, `13122517` |
 | [The hard anodize finish cannot apply to the polymer material option](13122514-13122517-material-finish-conflict.md) | `13122514`, `13122517` |
-
-## Closed by the KiCad reference design
-
-The earlier Altium release had three issues. The KiCad golden design does not have these issues:
-
-- The payload impedance note referred to layers that do not exist. The KiCad payload impedance
-  table gives layer 1, with layer 2 as the reference, on the 4-layer board.
-- The BOM gave `U5` the wrong core, Cortex-M4F. The KiCad platform BOM gives the correct core for
-  the STM32C011, Arm Cortex-M0+.
-- Two Altium projects referred to a missing `PCB2.PcbDoc` file. The repository does not contain
-  the Altium projects now.
